@@ -41,7 +41,7 @@ export default function WeatherSearch() {
     return (
         <div className="weather-container">
             <div className="weather-header">
-                <h2>Weather</h2>
+                <h1>Weather</h1>
             </div>
 
             <div className="weather-form">

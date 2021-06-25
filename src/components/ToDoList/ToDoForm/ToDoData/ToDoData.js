@@ -2,7 +2,7 @@ import ToDoItem from './ToDoItem/ToDoItem'
 
 export default function ToDos ({ todos, clickHandler }) {
     if (!todos.length) {
-        return <p>No Items</p>;
+        return <p>----</p>;
     }
     return (
         <ul>

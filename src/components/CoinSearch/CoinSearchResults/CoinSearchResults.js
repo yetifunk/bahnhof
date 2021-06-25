@@ -6,7 +6,7 @@ export default function CoinSearchResults ({ coinPrice }) {
     } else {
         return (
             <div className="coin-prices">
-                <h1 className="crypto">CryptoCorner</h1>
+                <h1 className="crypto">Crypto Hub</h1>
                 <div className="btc">
                     <h3>Bitcoin: ${coinPrice.bitcoin.usd}</h3>
                     <h4>24H Change:</h4><h4 className={(coinPrice.bitcoin.usd_24h_change.toFixed(3) < 0) ? 'red' : 'green'}>{coinPrice.bitcoin.usd_24h_change.toFixed(3)}</h4>
@@ -16,7 +16,7 @@ export default function CoinSearchResults ({ coinPrice }) {
                     <h4>24H Change:</h4><h4 className={(coinPrice.ethereum.usd_24h_change.toFixed(3) < 0) ? 'red' : 'green'}>{coinPrice.ethereum.usd_24h_change.toFixed(3)}</h4>
                 </div>
                 <div className="xmr">
-                    <h3>Monero: <br></br>${coinPrice.monero.usd}</h3>
+                    <h3>Monero: ${coinPrice.monero.usd}</h3>
                     <h4>24H Change:</h4><h4 className={(coinPrice.monero.usd_24h_change.toFixed(3) < 0) ? 'red' : 'green'}>{coinPrice.monero.usd_24h_change.toFixed(3)}</h4>
                 </div>
                 <div className="doge">

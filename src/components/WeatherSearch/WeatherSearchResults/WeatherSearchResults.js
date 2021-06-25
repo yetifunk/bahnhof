@@ -7,7 +7,7 @@ export default function WeatherSearchResults ({ weather }) {
         return (
             <>
             <div className="search-results">
-                <h1>Results:</h1>
+                <h2>Results:</h2>
                 <h2>{weather.name}</h2>
                 <h3>{weather.weather[0].description}</h3>
                 <h2>{weather.main.temp}° F</h2>
