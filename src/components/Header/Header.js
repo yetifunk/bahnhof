@@ -1,5 +1,9 @@
+import logo from './bahnhoflogo.png'
+
 export default function Header() {
     return (
-        <h1>Bahnhof</h1>
+        <div className="logo-header">
+            <img src={logo} />
+        </div>
     )
 }
