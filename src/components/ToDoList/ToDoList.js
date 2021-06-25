@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import ToDoForm from './ToDoForm/ToDoForm'
 import ToDoData from './ToDoForm/ToDoData/ToDoData'
-import ToDoItem from './ToDoForm/ToDoData/ToDoItem/ToDoItem';
 
 export default function ToDoList() {
 
@@ -44,6 +43,5 @@ export default function ToDoList() {
                     <ToDoData todos={todos.filter((item) => item.completed)} clickHandler={removeToDo} />
             </div>
         </div>
-
     )
 }
