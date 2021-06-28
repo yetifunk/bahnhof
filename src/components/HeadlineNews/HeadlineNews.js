@@ -26,10 +26,10 @@ export default function HeadlineNews() {
             setHeadlines(result.articles)
         })
         .catch(console.error);
+        console.log(headlines)
     }
     return (
         <div className="news-link">
-            <h1>Headline News</h1>
             <Link to='/home'>Dashboard</Link>
             <NewsResults headlines={headlines} />
         </div>

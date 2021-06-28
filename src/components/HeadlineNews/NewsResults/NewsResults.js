@@ -8,11 +8,16 @@ export default function NewsResults({ headlines }) {
             <div className="news-container">
                 {headlines.map((headline) => {
                     if (headline.author) {
-                        console.log(headline.title)
+                        console.log(headlines)
                         return (
                             <div className="news-item">
-                                <h3>{headline.title}</h3>
-                                <img src={headline.urlToImage} alt={headline.title} />
+                                <img src={headline.urlToImage} alt={headline.title} className="news-image" />
+                                <div className="text">
+                                    <h1>{headline.title}</h1>
+                                    <h2>{headline.author}</h2>
+                                    <h3>Source: {headline.source.name}</h3>
+                                    <h4>{headline.description}</h4>
+                                </div>
                             </div>
                             )
                         } else {
@@ -23,5 +28,3 @@ export default function NewsResults({ headlines }) {
         )
     }
 }
-
-

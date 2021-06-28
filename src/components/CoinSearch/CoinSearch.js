@@ -10,7 +10,7 @@ export default function CoinSearch() {
     }, []);
 
     async function getCoinPrices() {
-        const COIN_URL = "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cdogecoin%2Cethereum%2Cmonero&vs_currencies=usd&include_24hr_change=true"
+        const COIN_URL = "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cdogecoin%2Cethereum%2Cmonero%2Ccardano%2Cpolkadot&vs_currencies=usd&include_market_cap=false&include_24hr_vol=false&include_24hr_change=true"
 
         await fetch(COIN_URL)
         .then(res => res.json())

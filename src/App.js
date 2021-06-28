@@ -13,7 +13,7 @@ export default function App() {
       <Header />
       <Route path="/home" exact render={() => <WeatherSearch />} />
       <Route path="/home" exact render={() => <CoinSearch />} />
-      <Link to='/news'>Headline News</Link>
+      <Link to='/news' className="news-button"><h1>Headline News</h1></Link>
       <Route path='/news' exact render={() => <HeadlineNews />} />
       <Route path="/home" exact render={() => <ToDoList />} />
     </div>
