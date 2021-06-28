@@ -23,7 +23,7 @@ export default function CoinSearch() {
     return (
         <div className="coin-container">
             <div className="coin-header">
-                <h2>Hello From CoinSearch</h2>
+                <h1>CryptoHub</h1>
             </div>
             
             <div className="coin-results">
