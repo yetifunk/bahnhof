@@ -26,7 +26,6 @@ export default function HeadlineNews() {
             setHeadlines(result.articles)
         })
         .catch(console.error);
-        console.log(headlines)
     }
     
     return (

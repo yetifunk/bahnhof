@@ -8,9 +8,8 @@ export default function NewsResults({ headlines }) {
             <div className="news-container">
                 {headlines.map((headline) => {
                     if (headline.author) {
-                        console.log(headlines)
                         return (
-                            <div className="news-item">
+                            <div className="news-item" key={headline.publishedAt}>
                                 <img src={headline.urlToImage} alt={headline.title} className="news-image" />
                                 <div className="text">
                                     <h1>{headline.title}</h1>
