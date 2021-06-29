@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import CoinSearchResults from "./CoinSearchResults/CoinSearchResults";
 
 export default function CoinSearch() {
-    ////Coin Handelers
+    
     const [coinPrice, setCoinPrice] = useState([]);
 
     useEffect(() => {

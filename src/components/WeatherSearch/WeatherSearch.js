@@ -3,7 +3,6 @@ import WeatherSearchResults from "./WeatherSearchResults/WeatherSearchResults";
 
 export default function WeatherSearch() {
 
-    ////Weather Handlers
     const weatherSearch = {
     key: process.env.REACT_APP_OPENWEATHER_API_KEY,
     api: 'https://api.openweathermap.org/data/2.5/weather?q=',
@@ -41,7 +40,7 @@ export default function WeatherSearch() {
     return (
         <div className="weather-container">
             <div className="weather-header">
-                <h1>Weather</h1>
+                <h1>Weather Depot</h1>
             </div>
 
             <div className="weather-form">

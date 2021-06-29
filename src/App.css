@@ -28,6 +28,12 @@ li {
     color: white;
 }
 
+.cardano img {
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
 
 div.App {
     background-color: rgb(172, 194, 255);
@@ -105,7 +111,8 @@ div.search-results {
     margin: 10px 0 0 0;
     border: 5px solid white;
     text-align: center;
-    text-decoration: none;
+    text-decoration: underline;
+    color: white;
     background-color: rgb(6, 97, 170);
 }
 
@@ -191,7 +198,7 @@ input {
     border: 5px solid white;
     margin: 10px 10px 0 10px;
     text-align: center;
-    text-decoration: none;
+    text-decoration: underline;
     background-color: rgb(6, 97, 170);
     color: white;
     font-size: 60px;
@@ -212,4 +219,10 @@ input {
 h1, h2, h3, h4 {
     background-color: rgb(6, 97, 170);
     color: white;
+}
+
+.about-sign {
+    grid-column: 2;
+    margin: 5px auto 5px auto;
+    width: 10%;
 }

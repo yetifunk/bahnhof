@@ -34,7 +34,7 @@ export default function ToDoList() {
     }
     return (
         <div className="to-do-container">
-            <h1>Modus Operandi</h1>
+            <h1>Modus Operandi Terminal</h1>
             <ToDoForm handleChange={handleChange} handleSubmit={handleSubmit} updateToDo={updateToDo} removeToDo={removeToDo} newToDo={newToDo} />
             <div className="list-wrapper">
                 <h2>To Do Items:</h2>
