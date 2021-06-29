@@ -1,6 +1,5 @@
 * {
     font-family: 'Courier Prime', monospace;
-    background-color: rgb(172, 194, 255);
 }
 
 a {
@@ -13,14 +12,28 @@ img {
     width: 100%;
 }
 
-h1 {
-    margin-left: 10px;
+label {
+    color: white;
 }
 
+p {
+    color: white;
+}
+
+ul {
+    color: white;
+}
+
+li {
+    color: white;
+}
+
+
 div.App {
+    background-color: rgb(172, 194, 255);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 20px 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
 }
 
 .weather-form {
@@ -29,38 +42,78 @@ div.App {
 
 .weather-container {
     grid-column: 1;
-    margin-top: 20px;
+    margin-bottom: 10px;
     border: 5px solid white;
+    background-color: rgb(6, 97, 170);
+    color: white;
+}
+
+.weather-container h1 {
+    margin-left: 10px;
+    background-color: rgb(6, 97, 170);
+    color: white;
+}
+
+.weather-header {
+    background-color: rgb(6, 97, 170);
+}
+
+.search-form {
+    background-color: rgb(6, 97, 170);
+}
+
+.weather-form {
+    background-color: rgb(6, 97, 170);
 }
 
 div.search-results {
-    margin-left: 50px;
+    margin-left: 190px;
+    background-color: rgb(6, 97, 170);
+    color: white;
 }
+
 
 .coin-container {
     margin-left: 20px;
     grid-column: 2;
     grid-row: 1 / span 3;
     border: 5px solid white;
+    background-color: rgb(6, 97, 170);
 }
 
-.coin-results {
-    margin-left: 50px;;
+.coin-container h1 {
+    margin-left: 10px;
+    background-color: rgb(6, 97, 170);
 }
+
 
 .to-do-container {
     grid-column: 3;
     grid-row: 1 / span 3;
     border: 5px solid white;
     margin-left: 20px;
+    background-color: rgb(6, 97, 170);
+}
+
+.to-do-container h1 {
+    margin-left: 10px;
+    
 }
 
 .news-button {
     grid-column: 1;
-    margin: 10px 0 10px 0;
+    margin: 10px 0 0 0;
     border: 5px solid white;
     text-align: center;
     text-decoration: none;
+    background-color: rgb(6, 97, 170);
+}
+
+.news-button h1 {
+    background-color: rgb(6, 97, 170);
+    color: white;
+    font-size: 60px;
+    margin: 20px 0 0 0;
 }
 
 .red {
@@ -77,9 +130,23 @@ button {
     border: 2px solid white;
 }
 
+.to-do-button {
+    background-color: inherit;
+    border: none;
+    margin-left: 20px;
+}
+
+.list-wrapper {
+    margin-left: 100px;
+}
+
 input {
     background-color: white;
     border: 1px solid black;
+}
+
+.to-do-form {
+    margin-left: 10px;
 }
 
 
@@ -89,6 +156,7 @@ input {
 .news-image {
     width: 25%;
     margin-right: 25px;
+    border: 5px solid white;
 }
 
 .headline {
@@ -98,14 +166,15 @@ input {
 .news-item {
     display: flex;
     border: 5px solid white;
-    padding: 10px 10px 10px 10px;
+    padding: 20px 20px 20px 20px;
     margin: 10px 0 10px 0;
+    background-color: rgb(6, 97, 170);
 }
 
 .coinicon {
     max-width: 5%;
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .coinmain {
@@ -113,13 +182,34 @@ input {
 }
 
 .coin-prices h4 {
-    margin: 10px 0 10px 60px
+    margin: 10px 0 10px 100px;
+    background-color: rgb(6, 97, 170);
 }
 
 .news-link {
     grid-column: 2;
     border: 5px solid white;
-    margin: 10px 10px 10px 10px;
+    margin: 10px 10px 0 10px;
     text-align: center;
     text-decoration: none;
+    background-color: rgb(6, 97, 170);
+    color: white;
+    font-size: 60px;
+}
+
+.news-link h1 {
+    background-color: rgb(6, 97, 170);
+    color: white;
+    font-size: 60px;
+    margin: 20px 0 0 0;
+}
+
+.coin-results {
+    margin-left: 100px;
+    background-color: rgb(6, 97, 170);
+}
+
+h1, h2, h3, h4 {
+    background-color: rgb(6, 97, 170);
+    color: white;
 }

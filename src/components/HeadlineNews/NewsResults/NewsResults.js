@@ -14,9 +14,10 @@ export default function NewsResults({ headlines }) {
                                 <img src={headline.urlToImage} alt={headline.title} className="news-image" />
                                 <div className="text">
                                     <h1>{headline.title}</h1>
-                                    <h2>{headline.author}</h2>
+                                    <h2>Author(s): {headline.author}</h2>
                                     <h3>Source: {headline.source.name}</h3>
                                     <h4>{headline.description}</h4>
+                                    <a href={headline.url} target="_blank"><h4>Read More...</h4></a>
                                 </div>
                             </div>
                             )
