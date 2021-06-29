@@ -3,6 +3,11 @@
     background-color: rgb(172, 194, 255);
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 img {
     object-fit: cover;
     width: 100%;
@@ -52,9 +57,10 @@ div.search-results {
 
 .news-button {
     grid-column: 1;
-    grid-row: 2;
-    margin-top: 20px;
+    margin: 10px 0 10px 0;
     border: 5px solid white;
+    text-align: center;
+    text-decoration: none;
 }
 
 .red {
@@ -76,20 +82,24 @@ input {
     border: 1px solid black;
 }
 
-.news-link {
+
+.news {
     grid-column: 1 / span 3;
 }
-
 .news-image {
     width: 25%;
     margin-right: 25px;
+}
+
+.headline {
+    grid-column: 1 / span 3;
 }
 
 .news-item {
     display: flex;
     border: 5px solid white;
     padding: 10px 10px 10px 10px;
-    margin: 10px 10px 10px 10px;
+    margin: 10px 0 10px 0;
 }
 
 .coinicon {
@@ -104,4 +114,12 @@ input {
 
 .coin-prices h4 {
     margin: 10px 0 10px 60px
+}
+
+.news-link {
+    grid-column: 2;
+    border: 5px solid white;
+    margin: 10px 10px 10px 10px;
+    text-align: center;
+    text-decoration: none;
 }

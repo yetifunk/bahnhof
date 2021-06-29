@@ -29,9 +29,14 @@ export default function HeadlineNews() {
         console.log(headlines)
     }
     return (
-        <div className="news-link">
-            <Link to='/home'>Dashboard</Link>
-            <NewsResults headlines={headlines} />
-        </div>
+        <>
+            <div className="news-link">
+                <Link to='/home'><h1>Dashboard</h1></Link>
+            </div>
+            <div className="news">
+                <NewsResults headlines={headlines} />
+            </div>
+        </>
+
     )
 }
