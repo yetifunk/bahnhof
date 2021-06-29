@@ -34,7 +34,6 @@ li {
     border-radius: 20px;
 }
 
-
 div.App {
     background-color: rgb(172, 194, 255);
     display: grid;
@@ -78,7 +77,6 @@ div.search-results {
     color: white;
 }
 
-
 .coin-container {
     margin-left: 20px;
     grid-column: 2;
@@ -92,7 +90,6 @@ div.search-results {
     background-color: rgb(6, 97, 170);
 }
 
-
 .to-do-container {
     grid-column: 3;
     grid-row: 1 / span 3;
@@ -103,7 +100,6 @@ div.search-results {
 
 .to-do-container h1 {
     margin-left: 10px;
-    
 }
 
 .news-button {
@@ -123,8 +119,6 @@ div.search-results {
     margin: 20px 0 0 0;
 }
 
-
-
 .red {
     color: red
 }
@@ -137,6 +131,8 @@ button {
     color: white;
     background-color: rgb(6, 97, 170);
     border: 2px solid white;
+    margin-left: 10px;
+    padding: 3px;
 }
 
 .to-do-button {
@@ -152,12 +148,12 @@ button {
 input {
     background-color: white;
     border: 1px solid black;
+    padding: 4px;
 }
 
 .to-do-form {
     margin-left: 10px;
 }
-
 
 .news {
     grid-column: 1 / span 3;

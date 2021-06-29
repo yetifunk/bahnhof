@@ -10,6 +10,23 @@ export default function WeatherSearch() {
     units: '&units=imperial'
     }
 
+    navigator.geolocation.getCurrentPosition(function(position) {
+
+        console.log("Lat is :", position.coords.latitude)
+        console.log("Long is :", position.coords.longitude)
+    })
+
+    // fetch(`https://geocode.xyz/${position.coords.latitude},${position.coords.longitude}?json=1`)
+    // .then(res => res.json())
+    // .then(result => {
+    //     setWeather(result.postal)
+    // })
+    // .catch(console.error)
+
+    // https://geocode.xyz/38.9218304,-104.78551039999999?json=1
+
+
+
     const [weather, setWeather] = useState([]);
     const [searchString, setSearchString] = useState('80918');
     const [lastSearch, setLastSearch] = useState('');
@@ -21,14 +38,14 @@ export default function WeatherSearch() {
     function handleSubmit(event) {
         event.preventDefault();
         getWeather(searchString)
-    } 
+    }
 
     useEffect(() => {
         getWeather();
     }, []);
 
     async function getWeather() {
-        const url = `${weatherSearch.api}${searchString}${weatherSearch.units}${weatherSearch.apikey}${weatherSearch.key}`
+        const url = `${weatherSearch.api}${searchString},us${weatherSearch.units}${weatherSearch.apikey}${weatherSearch.key}`
 
         await fetch(url)
         .then(res => res.json())
