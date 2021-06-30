@@ -1,10 +1,32 @@
 import { useState, useEffect } from "react";
+import { Redirect } from "react-router-dom";
 import WeatherSearchResults from "./WeatherSearchResults/WeatherSearchResults";
 
 export default function WeatherSearch() {
     
     const [weather, setWeather] = useState([]);
     const [searchString, setSearchString] = useState('');
+
+    useEffect(() => {
+        geoWeather();
+    }, [])
+
+    async function geoWeather(){
+        await fetch('https://freegeoip.app/json/')
+        .then(res => res.json())
+        .then(result => {
+            console.log(result.zip_code)
+            setSearchString(result.zip_code)
+            getWeather()
+            console.log(searchString)
+            console.log(result)
+        })
+    }
+    
+
+    // console.log(location)
+    // console.log(searchString)
+    // console.log(location.zip_code)
     
     const weatherSearch = {
         key: process.env.REACT_APP_OPENWEATHER_API_KEY,
@@ -23,9 +45,9 @@ export default function WeatherSearch() {
         setSearchString("")
     }
     
-    useEffect(() => {
-            getWeather();
-        }, []);
+    // useEffect(() => {
+    //         getWeather();
+    //     }, []);
         
     async function getWeather() {
         const url = `${weatherSearch.api}${searchString},us${weatherSearch.units}${weatherSearch.apikey}${weatherSearch.key}`
@@ -37,6 +59,7 @@ export default function WeatherSearch() {
         })
         .catch(console.error);
     }
+
     return (
         <div className="weather-container">
             <div className="weather-header">
