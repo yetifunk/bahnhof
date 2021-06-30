@@ -5,7 +5,6 @@ export default function WeatherSearch() {
     
     const [weather, setWeather] = useState([]);
     const [searchString, setSearchString] = useState('');
-    const [lastSearch, setLastSearch] = useState('');
     
     const weatherSearch = {
         key: process.env.REACT_APP_OPENWEATHER_API_KEY,
@@ -56,8 +55,8 @@ export default function WeatherSearch() {
                     <button type="submit">Search</button>
                 </form>
             </div>
-        
-              <WeatherSearchResults weather={weather}/>
+
+            <WeatherSearchResults weather={weather}/>
         </div>
     )
 }

@@ -12,11 +12,11 @@ export default function App() {
   return (
     <div className="App">
       <Header />
-      <Route path='/home' exact render={() => <WeatherSearch />} />
-      <Route path='/home' exact render={() => <CoinSearch />} />
+      <Route path='/' exact render={() => <WeatherSearch />} />
+      <Route path='/' exact render={() => <CoinSearch />} />
       <Link to='/news' className='news-button'><h1>Headline News</h1></Link>
       <Route path='/news' exact render={() => <HeadlineNews />} />
-      <Route path='/home' exact render={() => <ToDoList />} />
+      <Route path='/' exact render={() => <ToDoList />} />
       <img src={sign} alt='train crossing' className='about-sign' />
     </div>
   );

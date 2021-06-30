@@ -31,7 +31,7 @@ export default function HeadlineNews() {
     return (
         <>
             <div className="news-link">
-                <Link to='/home'><h1>Dashboard</h1></Link>
+                <Link to='/'><h1>Dashboard</h1></Link>
             </div>
             <div className="news">
                 <NewsResults headlines={headlines} />
