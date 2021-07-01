@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { Redirect } from "react-router-dom";
 import WeatherSearchResults from "./WeatherSearchResults/WeatherSearchResults";
 
 export default function WeatherSearch() {
@@ -17,11 +16,13 @@ export default function WeatherSearch() {
         .then(result => {
             console.log(result.zip_code)
             setSearchString(result.zip_code)
-            getWeather()
             console.log(searchString)
-            console.log(result)
         })
+        .then(getWeather())
+        .then(setSearchString(''))
     }
+
+    console.log(searchString)
     
 
     // console.log(location)
