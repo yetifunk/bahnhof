@@ -44,8 +44,8 @@ export default function WeatherSearch() {
     }
     
     useEffect(() => {
-            getWeather();
-        }, []);
+        getWeather();
+    }, []);
         
     async function getWeather() {
         const url = `${weatherSearch.api}${searchString},us${weatherSearch.units}${weatherSearch.apikey}${weatherSearch.key}`
@@ -57,6 +57,8 @@ export default function WeatherSearch() {
         })
         .catch(console.error);
     }
+
+
 
     return (
         <div className="weather-container">
