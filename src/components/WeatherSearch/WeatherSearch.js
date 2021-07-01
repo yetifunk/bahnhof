@@ -19,10 +19,6 @@ export default function WeatherSearch() {
         })
     }
 
-    // console.log(location)
-    // console.log(searchString)
-    // console.log(location.zip_code)
-    
     const weatherSearch = {
         key: process.env.REACT_APP_OPENWEATHER_API_KEY,
         api: 'https://api.openweathermap.org/data/2.5/weather?q=',
@@ -39,10 +35,6 @@ export default function WeatherSearch() {
         getWeather(searchString)
         setSearchString("")
     }
-    
-    // useEffect(() => {
-    //     getWeather();
-    // }, []);
         
     async function getWeather() {
         const url = `${weatherSearch.api}${searchString},us${weatherSearch.units}${weatherSearch.apikey}${weatherSearch.key}`
