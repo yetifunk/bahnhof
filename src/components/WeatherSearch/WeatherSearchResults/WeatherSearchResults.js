@@ -4,7 +4,6 @@ export default function WeatherSearchResults ({ weather }) {
             <h1>No Results</h1>
         )
     } else {
-        console.log(weather)
         return (
             <>
             <div className="search-results">

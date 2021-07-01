@@ -6,9 +6,9 @@ export default function HeadlineNews() {
 
     const newsSearch = {
         key: process.env.REACT_APP_NEWS_API_KEY,
-        api: 'https://newsapi.org/v2/top-headlines?',
-        country: 'country=us&',
-        apikey: 'apiKey='
+        api: 'https://gnews.io/api/v4/top-headlines?',
+        apikey: 'token=',
+        lang: '&lang=en'
     }
 
     const [headlines, setHeadlines] = useState([])
@@ -18,7 +18,7 @@ export default function HeadlineNews() {
     }, []);
 
     async function getNews() {
-        const url = `${newsSearch.api}${newsSearch.country}${newsSearch.apikey}${newsSearch.key}`
+        const url = `${newsSearch.api}${newsSearch.apikey}${newsSearch.key}${newsSearch.lang}`
 
         await fetch(url)
         .then(res => res.json())
@@ -27,6 +27,8 @@ export default function HeadlineNews() {
         })
         .catch(console.error);
     }
+
+    console.log(headlines)
     
     return (
         <>
