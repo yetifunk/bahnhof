@@ -9,3 +9,17 @@ Bahnhof is a multipurpose dashboard application built using the React JavsScript
 
 - Built with the React JavaScript library.
 - Utilizes multiple API's to fetch and populate data.
+
+# Development Concept/Progress:
+
+### App Work Flow
+![App Flow](https://user-images.githubusercontent.com/83781116/124175538-f662f100-da6a-11eb-8b1f-543937ac4e23.png)
+
+### App Wireframe
+![AppWireframe](https://user-images.githubusercontent.com/83781116/124175546-f82cb480-da6a-11eb-8530-6d5cbe3c1e3c.png)
+
+### Initial State
+![initial](https://user-images.githubusercontent.com/83781116/124175832-535ea700-da6b-11eb-8f09-100f62c793a1.png)
+
+### Styling on its way to the current version
+![stylingupdate](https://user-images.githubusercontent.com/83781116/124175835-53f73d80-da6b-11eb-8732-1be76b859e41.png)
