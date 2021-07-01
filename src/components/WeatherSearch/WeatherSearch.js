@@ -23,7 +23,6 @@ export default function WeatherSearch() {
     }
 
     console.log(searchString)
-    
 
     // console.log(location)
     // console.log(searchString)
