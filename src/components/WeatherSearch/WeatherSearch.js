@@ -6,21 +6,18 @@ export default function WeatherSearch() {
     const [weather, setWeather] = useState([]);
     const [searchString, setSearchString] = useState('');
 
-    // useEffect(() => {
-    //     geoWeather();
-    // }, [])
+    useEffect(() => {
+        geoWeather();
+    }, [])
 
-    // async function geoWeather(){
-    //     await fetch('https://freegeoip.app/json/')
-    //     .then(res => res.json())
-    //     .then(result => {
-    //         console.log(result.zip_code)
-    //         setSearchString(result.zip_code)
-    //         console.log(searchString)
-    //     })
-    //     .then(getWeather())
-    //     .then(setSearchString(''))
-    // }
+    async function geoWeather(){
+        await fetch('https://freegeoip.app/json/')
+        .then(res => res.json())
+        .then(result => {
+            setSearchString(result.zip_code)
+            getWeather()
+        })
+    }
 
     // console.log(location)
     // console.log(searchString)
@@ -43,9 +40,9 @@ export default function WeatherSearch() {
         setSearchString("")
     }
     
-    useEffect(() => {
-        getWeather();
-    }, []);
+    // useEffect(() => {
+    //     getWeather();
+    // }, []);
         
     async function getWeather() {
         const url = `${weatherSearch.api}${searchString},us${weatherSearch.units}${weatherSearch.apikey}${weatherSearch.key}`
@@ -57,7 +54,6 @@ export default function WeatherSearch() {
         })
         .catch(console.error);
     }
-
 
 
     return (

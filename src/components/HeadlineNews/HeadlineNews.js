@@ -28,8 +28,6 @@ export default function HeadlineNews() {
         .catch(console.error);
     }
 
-    console.log(headlines)
-    
     return (
         <>
             <div className="news-link">
